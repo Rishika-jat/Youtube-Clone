@@ -1,4 +1,29 @@
-.flex{
-    display: flex;
-    align-items: center;
+.flex {
+  display: flex;
+  align-items: center;
+}
+.side-option {
+  padding: 20px;
+  width: 210px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 10px;
+}
+.side-option:hover {
+  background-color: hsl(0, 0%, 18.82%);
+}
+.hr{
+    margin: 15px;
+    width: 210px;
+    height: 1px;
+    background-color: hsl(0, 0%, 18.82%);
+}
+.side-head{
+    margin: 20px;
+    font-weight: 700;
+}
+.image-as-icon{
+  width: 18px;
 }
