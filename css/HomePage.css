@@ -10,13 +10,14 @@ body {
   height: 100%;
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 
 /* Navbar */
 .navbar {
   width: 100%;
   height: 60px;
-  padding: 20px;
+  padding: 25px;
   justify-content: space-between;
   position: sticky;
 }
@@ -79,18 +80,24 @@ body {
 }
 
 /* Sidebar */
+
 .sidebar {
-  width: 220px;
-  height: 100%;
-  /* padding: 20px; */
-  /* background-color: white; */
+  width: 230px;
+  height: 90%;
   margin-top: 15px;
   font-weight:10px;
+  display: block;
+}
+
+.sidebar:hover{
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: hsl(0, 1%, 53%) black;
 }
 
 .icon-subscription img{
     width: 22px;
-    /* padding: -10px; */
 }
 span{
     font-weight: 700;
@@ -105,8 +112,29 @@ span{
     margin: 20px;
     word-spacing: 2mm;
     font-size: small;
+    padding: 10px;
 }
 .footer footer{
    margin-bottom: 15px;
    font-weight: 600;
+   
+}
+.sidebar2{
+  width:70px;
+  height: 90%;
+  margin-top: 15px;
+  font-weight:10px;
+ 
+  text-align: center;
+  display: none;
+ 
+}
+.s2-home,.s2-short,.s2-subscribe, .s2-you{
+ margin-bottom: 30px;
+}
+
+.sidebar2 p{
+  margin-top: 4px;
+  color: white;
+  font-size:x-small;
 }
