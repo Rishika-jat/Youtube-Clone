@@ -10,7 +10,9 @@ body {
   height: 100%;
   background-color: black;
   color: white;
-  overflow: hidden;
+  overflow-x:hidden;
+  overflow-y: auto;
+  position: relative;
 }
 
 /* Navbar */
@@ -87,6 +89,8 @@ body {
   margin-top: 15px;
   font-weight:10px;
   display: block;
+  position: fixed;
+  
 }
 
 .sidebar:hover{
@@ -129,6 +133,7 @@ span{
   display: none;
  
 }
+
 .s2-home,.s2-short,.s2-subscribe, .s2-you{
  margin-bottom: 30px;
 }
@@ -137,4 +142,43 @@ span{
   margin-top: 4px;
   color: white;
   font-size:x-small;
+}
+
+/* Filter buttons */
+
+.filter-btns{
+  width:100%;
+
+  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  position: absolute;
+  top: 70px;
+  left: 250px;
+ 
+ overflow: hidden;
+}
+
+
+
+.filter-btns button{
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 7px;
+  font-size:15px;
+  font-weight: 500;
+  text-wrap: nowrap;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.content-join{
+  display: flex;
+  gap: 2rem;
+ 
 }
