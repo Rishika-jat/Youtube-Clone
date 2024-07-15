@@ -6,11 +6,11 @@
 }
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: black;
   color: white;
-  overflow-x:hidden;
+  overflow-x: hidden;
   overflow-y: auto;
   position: relative;
 }
@@ -21,7 +21,9 @@ body {
   height: 60px;
   padding: 25px;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
+  z-index: 2;
+  background-color: black;
 }
 .nav-left {
   gap: 1.6rem;
@@ -86,68 +88,75 @@ body {
 .sidebar {
   width: 230px;
   height: 90%;
-  margin-top: 15px;
-  font-weight:10px;
+  margin-top: 70px;
+  font-weight: 10px;
   display: block;
   position: fixed;
-  
 }
 
-.sidebar:hover{
+.sidebar:hover {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: hsl(0, 1%, 53%) black;
 }
 
-.icon-subscription img{
-    width: 22px;
+.icon-subscription img {
+  width: 22px;
 }
-span{
-    font-weight: 700;
-    color: hsl(0, 6%, 73%);
+span {
+  font-weight: 700;
+  color: hsl(0, 6%, 73%);
 }
-.side-5{
-    margin-bottom: 20px;
-    padding-bottom: 5px;
+.side-5 {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
 }
-.footer{
-    color: grey;
-    margin: 20px;
-    word-spacing: 2mm;
-    font-size: small;
-    padding: 10px;
+.footer {
+  color: grey;
+  margin: 20px;
+  word-spacing: 2mm;
+  font-size: small;
+  padding: 10px;
 }
-.footer footer{
-   margin-bottom: 15px;
-   font-weight: 600;
-   
+.footer footer {
+  margin-bottom: 15px;
+  font-weight: 600;
 }
-.sidebar2{
-  width:70px;
-  height: 90%;
-  margin-top: 15px;
-  font-weight:10px;
- 
+.sidebar2 {
+  width: 70px;
+  height: 100%;
+  margin-top: 80px;
+  font-weight: 10px;
   text-align: center;
+  /* position: absolute; */
   display: none;
- 
+
+  /* width: 230px;
+  height: 90%;
+  margin-top: 70px;
+  font-weight: 10px;
+  display: block;
+  position: fixed; */
 }
 
-.s2-home,.s2-short,.s2-subscribe, .s2-you{
- margin-bottom: 30px;
+.s2-home,
+.s2-short,
+.s2-subscribe,
+.s2-you {
+  margin-bottom: 30px;
 }
 
-.sidebar2 p{
+.sidebar2 p {
   margin-top: 4px;
   color: white;
-  font-size:x-small;
+  font-size: x-small;
 }
 
 /* Filter buttons */
 
-.filter-btns{
-  width:100%;
+.filter-btns {
+  width: 1200px;
 
   height: 50px;
   display: flex;
@@ -156,14 +165,11 @@ span{
   position: absolute;
   top: 70px;
   left: 250px;
- 
- overflow: hidden;
+  overflow: hidden;
 }
 
-
-
-.filter-btns button{
-  background-color: rgba(255,255,255,0.1);
+.filter-btns button {
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
   border: none;
   height: 40px;
@@ -172,13 +178,72 @@ span{
   padding-left: 20px;
   padding-right: 20px;
   margin: 7px;
-  font-size:15px;
+  font-size: 15px;
   font-weight: 500;
   text-wrap: nowrap;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.content-join{
+.content-join {
   display: flex;
   gap: 2rem;
- 
+}
+/* banner&container of youtube videos */
+
+.container {
+  width: 1200px;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  left: 260px;
+  top: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.banner img {
+  height: 400px;
+  width: 1200px;
+  background: transparent;
+}
+.thumb {
+  position: relative;
+}
+.thumbnail {
+  position: relative;
+  width: 385px;
+  border-radius: 15px;
+  margin-bottom: 7px;
+}
+.vid-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 350px;
+  font-size: 13px;
+}
+.vid-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.vid-channel {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  margin-top: 10px;
+  color: hsl(0, 1%, 55%);
+  font-size: 11px;
+  margin-left: 56px;
+}
+/* filter button css */
+
+button.active{
+  background-color: white;
+  color: black;
+}
+.hide{
+  display: none;
 }
