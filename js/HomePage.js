@@ -8,13 +8,7 @@ let container = document.querySelector(".container");
 let thumbnails = document.querySelectorAll('.thumbnail')
 let profile = document.querySelectorAll('.vid-profile');
 let bannerimg = document.querySelector('.banner-img')
-let side1 = document.querySelector(".side-1");
-
-let side2 = document.querySelector(".side-2");
-let side3 = document.querySelector(".side-3");
-let side4 = document.querySelector(".side-4");
-let side5 = document.querySelector(".side-5");
-let side6 = document.querySelector(".side-6");
+let timestmp = document.querySelectorAll('.time-stamp')
 let download = document.querySelector(".download");
 
 let currentStatusSide = true;
@@ -37,6 +31,10 @@ menuBar.addEventListener("click", function () {
 // vidprofile.style.gap="30px"
 vidprofile.style.width="335px"
    })
+   timestmp.forEach(time=>{
+    time.style.left ="19vw";
+    time.style.top="9vw"
+   })
    
   
   } else if (currentStatusSide === false) {
@@ -44,16 +42,21 @@ vidprofile.style.width="335px"
     sidebar2.style.display = "none";
     currentStatusSide = true;
     filterbtns.style.left = "250px";
-     bannerimg.style.width="1200px"
+     bannerimg.style.width="81vwpx"
     container.style.position = "absolute";
     container.style.left = "260px";
-    container.style.width="1200px";
+    container.style.width="90vw";
     thumbnails.forEach(thumbnail=>{
-      thumbnail.style.width="385px"
+      thumbnail.style.width="26vw"
      })
      profile.forEach(vidprofile=>{
-  vidprofile.style.width="385px"
+  vidprofile.style.width="24vw"
      })
+     timestmp.forEach(time=>{
+      time.style.left ="22vw";
+      time.style.top="11vw"
+     })
+     
   }
 });
 

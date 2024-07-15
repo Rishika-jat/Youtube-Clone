@@ -274,6 +274,49 @@ button.active {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.shortHead{
+  width: 85%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.short-heading img{
+  width: 30px;
+}
+.short-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.cut-shorts button{
+background-color: black;
+border: none;
+color: white;
+font-size: 17px;
+
+}
+.thumbnail-shorts{
+  position: relative;
+  width: 18vw;
+  border-radius: 15px;
+  margin-bottom: 7px;
+}
+.short-profile{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 20vw;
+  font-size: 13px;
+}
+.short-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 /* media query for navbar */
 
 @media (max-width: 700px) {
@@ -324,17 +367,8 @@ button.active {
   .banner {
     display: none;
   }
-  /* .thumbnail{
-    width: 350px;
-  }
-  .vid-profile{
-    width: 330px;
-  }
-  .time-stamp{
-    top: 160px;
-    left: 310px;
-  }
-   */
+ 
+  
 }
 @media (max-width: 1100px) {
   .thumbnail {
@@ -410,6 +444,27 @@ button.active {
   }
 
   .banner {
+    display: none;
+  }
+}
+/* shorts media query */
+@media (max-width:1100px) {
+  .thumbnail-shorts{
+    width: 40vw;
+  }
+  .short-profile {
+    width: 40vw;
+  }
+}
+@media (max-width:500px) {
+ 
+  .short-profile img{
+    display: none;
+  }
+  .short-heading i{
+    display: none;
+  }
+  .vid-channel{
     display: none;
   }
 }
