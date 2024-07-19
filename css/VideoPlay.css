@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* navbar */
+.navbar {
+  width: 100vw;
+
+  height: 90px;
+  padding: 25px;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  background-color: rgb(27, 27, 27);
+  margin-bottom: 25px;
+}
+.nav-left {
+  gap: 1.6vw;
+}
+.logo-youtube {
+  gap: 0.1rem;
+}
+.logo-youtube img {
+  width: 40px;
+}
+.logo-youtube h1 {
+  font-family: Arial;
+  font-size: 25px;
+}
+
+.nav-mid input {
+  border: 1px solid black;
+  background-color: transparent;
+  font-size: 15px;
+  width: 35vw;
+
+  border: 1px solid hsl(0, 0%, 18.82%);
+  height: 40px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  padding: 10px;
+}
+.nav-mid .icon-search {
+  border: 1px solid black;
+  background-color: transparent;
+  font-weight: bold;
+  width: 60px;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  height: 40px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: hsl(0, 0%, 18.82%);
+
+  padding: 10px;
+  text-align: center;
+}
+.mic img {
+  width: 20px;
+  margin: 15px;
+}
+.nav-right {
+  gap: 2rem;
+}
+.nav-right .profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(186, 37, 11);
+  text-align: center;
+  border-radius: 50%;
+}
+.nav-right .profile-icon p {
+  padding: 10px;
+}
+
+.nav-right2 i,
+.nav-right2 {
+  display: none;
+}
+
+/* main container */
+.main-container {
+  width: 60%;
+  height: 80%;
+  background-color: black;
+  margin-left: 80px;
+}
+.video-container {
+  width: 100%;
+  height: 90%;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+}
+progress {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(202, 195, 195);
+}
+progress[value] {
+  appearance: none; 
+  border: none;     
+  color: red;   
+}
+ 
+progress[value]::-webkit-progress-value {
+  background-image: linear-gradient(to right, #ff0000, #ff0606);
+  transition: width 1s linear;
+}
+.control-1 , .control-2 {
+  display: flex;
+  gap: 1rem;
+  padding: 10px;
+}
+.control-1 p, .control-1 span{
+  margin-top: 4px;
+  color: rgb(207, 195, 195);
+  font-size: x-small;
+  letter-spacing: 0.3mm;
+}
+.all-control-icon{
+  display: flex;
+  justify-content: space-between;
+}
+.video-detail{
+  margin-left: 80px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.video-profile{
+
+}
+.video-profile{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.video-profile .infulencer-detail img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+ .channel-name p:nth-last-of-type(1){
+  font-size: 12px;
+  color: rgb(199, 188, 188);
+
+}
+.subscribe-btn{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  width: 120px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+.all{
+  width: 60%;
+  display: flex;
+  margin-left: 80px;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.video-det{
+  display: flex;
+  gap: 1rem;
+}
+.like-dis{
+  display:flex;
+ 
+}
+.btt{
+  border: 1px solid black;
+  background-color: transparent;
+  font-weight: bold;
+  width: 60px;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  height: 40px;
+  width: auto;
+  background-color: hsl(0, 0%, 18.82%);
+border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
+.bt1{
+  border: 1px solid black;
+  background-color: transparent;
+  font-weight: bold;
+  width: 60px;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  height: 40px;
+  
+  background-color: hsl(0, 0%, 18.82%);
+display: flex;
+gap: 10px;
+  padding: 10px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 80px;
+}
+.bt2{
+  border: 1px solid black;
+  background-color: transparent;
+  font-weight: bold;
+  width: 60px;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  height: 40px;
+  
+  background-color: hsl(0, 0%, 18.82%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.line-dash{
+  height: 30px;
+  background-color: hsl(0, 0%, 0%);
+ margin-top: 5px;
+ margin-left: 2px;
+  width: 1px;
+}
+.menu{
+  border: 1px solid black;
+  background-color: transparent;
+  font-weight: bold;
+  width: 60px;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  height: 40px;
+  width: 40px;
+  background-color: hsl(0, 0%, 18.82%);
+  text-align: center;
+border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  /* rotate: 90deg; */
+ padding-left: 17px;
+  gap: 20px;
+}
+
+/*description*/
+.description-box{
+  width: 60%;
+  height: auto;
+  background-color:  hsl(0, 0%, 18.82%);
+  margin-left: 80px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 14px;
+  word-spacing: 1mm;
+}
+.more{
+  background-color: transparent;
+  color: WHITE;
+  border: none;
+}
+/*comment-heading*/
+.head-comments{
+  width: 60%;
+  margin-left: 80px;
+  display: flex;
+  margin-top: 20px;
+  gap: 2rem;
+}
+.sort-by{
+  display: flex;
+  gap: 10PX;
+}
+.sort-by img{
+  width: 25px;
+  height: 20px;
+}
+/* my-profile for comment */
+.my-profile{
+  width: 40px;
+  height: 40px;
+  background:red;
+  text-align: center;
+  border-radius: 50%;
+}
+.my-profile p {
+  padding: 10px;
+}
+
+.comment-my-profile{
+  margin-left: 80px;
+  margin-top: 20px;
+  display: flex;
+  gap: 1rem;
+}
+
+.hr{
+  width: 850px;
+  height: 1px;
+
+}
+/* add users comment */
+.add-comment{
+  display: flex;
+  flex-direction: column;
+  color: hsl(0, 3%, 62%);
+  font-size: 15px;
+}
+.comment{
+  display: flex;
+  width: 60%;
+  margin-left: 80px;
+  margin-top: 20px;
+  gap: 1rem;
+}
+.user-profile img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-details{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.user-name{
+  display:flex;
+  gap: 1rem;
+
+}
+.name{
+  font-weight: bold;
+  font-size: 15px;
+}
+.ago-days{
+font-size: 13px;
+color: hsl(0, 6%, 78%);
+margin-bottom: 10px;
+}
+.actual-comment p{
+font-size: 15px;
+margin-bottom: 10px;
+}
+.bt{
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+.reply{
+  color: rgb(24, 168, 235);
+}
+.section{
+  position: relative;
+  bottom: 1310px;
+  left: 1010px;
+  width: 40%;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 5px;
+  position: relative;
+}
+.thumbnail img{
+  width: 180px;
+  border-radius: 5px;
+
+}
+.details{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+}
+.view {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+ 
+  color:hsl(0, 6%, 69%);
+  font-size: 12px;
+}
+.about-video p{
+  font-size: 15px;
+}
+.channel p{
+  font-size: 12px;
+  color:hsl(0, 6%, 69%);
+}
